@@ -10,12 +10,14 @@ uvicorn main:app --reload
 
 
 API Endpoint
-Health Check:
+eeg Check:
 Http
-GET /health
+GET /eeg
 
 Response:
 JSON
 {
-  "status": "healthy"
+  "signal_status": "active",
+  "device": "EEG Sensor",
+  "message": "EEG monitoring service is running"
 }

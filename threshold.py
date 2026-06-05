@@ -1,0 +1,23 @@
+THRESHOLD = 0.70
+
+EEG_COMMANDS = {
+    10: "OPEN_NOTEPAD",
+    20: "OPEN_CALCULATOR",
+    30: "OPEN_BROWSER",
+    40: "OPEN_YOUTUBE",
+    50: "VOLUME_UP",
+    60: "VOLUME_DOWN",
+    70: "PLAY",
+    80: "PAUSE",
+    90: "SCROLL_UP",
+    100: "SCROLL_DOWN",
+    110: "MOVE_LEFT",
+    120: "MOVE_RIGHT",
+    130: "MOVE_UP",
+    140: "MOVE_DOWN",
+    150: "CLICK",
+    160: "DOUBLE_CLICK",
+    170: "CLOSE_NOTEPAD",
+    180: "CLOSE_CALCULATOR",
+    190: "CLOSE_BROWSER",
+}

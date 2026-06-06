@@ -4,9 +4,14 @@ import subprocess
 import webbrowser
 import pyautogui
 
+from logger import logger
+from exceptions import InvalidCommandError
+
 pyautogui.FAILSAFE = True
 
 THRESHOLD = 0.70
+
+logger.info("Dispatcher Module Loaded")
 
 # =====================================================
 # APPLICATION FUNCTIONS
@@ -24,33 +29,28 @@ def close_browser():
     return "Browser Closed"
 
 
+def open_chatgpt():
+    webbrowser.open("https://chatgpt.com")
+    return "ChatGPT Opened"
+
+
+def close_chatgpt():
+    os.system("taskkill /F /IM chrome.exe >nul 2>&1")
+    os.system("taskkill /F /IM msedge.exe >nul 2>&1")
+    os.system("taskkill /F /IM firefox.exe >nul 2>&1")
+    return "ChatGPT Closed"
+
+
 def open_youtube():
 
-    video_url = "https://www.youtube.com/watch?v=jfKfPfyJRdk"
+    video_url = "https://www.youtube.com"
 
     subprocess.Popen(
         f'start "" "{video_url}"',
         shell=True
     )
 
-    time.sleep(15)
-
-    screen_width, screen_height = pyautogui.size()
-
-    pyautogui.click(
-        screen_width // 2,
-        screen_height // 2
-    )
-
-    time.sleep(2)
-
-    pyautogui.press("k")
-
-    time.sleep(1)
-
-    pyautogui.press("f")
-
-    return "YouTube Video Playing"
+    return "YouTube Opened"
 
 
 def close_youtube():
@@ -87,6 +87,10 @@ def close_notepad():
 
 COMMAND_REGISTRY = {
 
+    # ChatGPT
+    "OPEN_CHATGPT": open_chatgpt,
+    "CLOSE_CHATGPT": close_chatgpt,
+
     # Browser
     "OPEN_BROWSER": open_browser,
     "CLOSE_BROWSER": close_browser,
@@ -118,7 +122,7 @@ COMMAND_REGISTRY = {
     "SCROLL_UP": lambda: pyautogui.scroll(500),
     "SCROLL_DOWN": lambda: pyautogui.scroll(-500),
 
-    # Mouse Move
+    # Mouse Movement
     "MOVE_UP": lambda: pyautogui.moveRel(0, -100),
     "MOVE_DOWN": lambda: pyautogui.moveRel(0, 100),
     "MOVE_LEFT": lambda: pyautogui.moveRel(-100, 0),
@@ -134,23 +138,74 @@ COMMAND_REGISTRY = {
     "PRESS_ESCAPE": lambda: pyautogui.press("esc"),
 }
 
+# =====================================================
+# EEG COMMAND MAPPING
+# =====================================================
+
+EEG_COMMANDS = {
+
+    10: "OPEN_NOTEPAD",
+    20: "OPEN_CALCULATOR",
+    30: "OPEN_BROWSER",
+    40: "OPEN_YOUTUBE",
+    50: "OPEN_CHATGPT",
+
+    60: "CLOSE_NOTEPAD",
+    70: "CLOSE_CALCULATOR",
+    80: "CLOSE_BROWSER",
+    90: "CLOSE_YOUTUBE",
+    100: "CLOSE_CHATGPT",
+
+    110: "VOLUME_UP",
+    120: "VOLUME_DOWN",
+
+    130: "PLAY",
+    140: "PAUSE",
+
+    150: "NEXT_TRACK",
+    160: "PREV_TRACK",
+
+    170: "SCROLL_UP",
+    180: "SCROLL_DOWN",
+
+    190: "MOVE_LEFT",
+    200: "MOVE_RIGHT",
+    210: "MOVE_UP",
+    220: "MOVE_DOWN",
+
+    230: "CLICK",
+    240: "DOUBLE_CLICK",
+    250: "RIGHT_CLICK"
+}
 
 # =====================================================
-# DISPATCH FUNCTION
+# COMMAND DISPATCHER
 # =====================================================
 
 def dispatch_command(command_name, confidence):
 
     cmd = command_name.strip().upper()
 
+    logger.info(
+        f"Command Received: {cmd} | Confidence: {confidence}"
+    )
+
     if cmd not in COMMAND_REGISTRY:
-        return {
-            "status": "error",
-            "command": cmd,
-            "message": "Command not recognized"
-        }
+
+        logger.error(
+            f"Invalid Command: {cmd}"
+        )
+
+        raise InvalidCommandError(
+            f"{cmd} is not a valid command"
+        )
 
     if confidence < THRESHOLD:
+
+        logger.warning(
+            f"Low Confidence: {confidence}"
+        )
+
         return {
             "status": "skipped",
             "command": cmd,
@@ -161,6 +216,10 @@ def dispatch_command(command_name, confidence):
 
         result = COMMAND_REGISTRY[cmd]()
 
+        logger.info(
+            f"Executed: {cmd}"
+        )
+
         return {
             "status": "executed",
             "command": cmd,
@@ -170,51 +229,96 @@ def dispatch_command(command_name, confidence):
 
     except Exception as e:
 
-        return {
-            "status": "execution_failed",
-            "command": cmd,
-            "message": str(e)
-        }
+        logger.error(
+            f"Execution Failed: {cmd} | {e}"
+        )
+
+        raise
 
 
 # =====================================================
-# TESTING
+# EEG DISPATCHER
+# =====================================================
+
+def dispatch_eeg(eeg_value):
+
+    logger.info(
+        f"EEG Value Received: {eeg_value}"
+    )
+
+    try:
+
+        eeg_value = int(
+            float(eeg_value)
+        )
+
+    except Exception:
+
+        logger.error(
+            f"Invalid EEG Value: {eeg_value}"
+        )
+
+        return {
+            "status": "error",
+            "message": "Invalid EEG value"
+        }
+
+    command = EEG_COMMANDS.get(
+        eeg_value
+    )
+
+    if command is None:
+
+        logger.warning(
+            f"No mapping for EEG value {eeg_value}"
+        )
+
+        return {
+            "status": "ignored",
+            "eeg_value": eeg_value,
+            "message": "No command mapped"
+        }
+
+    logger.info(
+        f"EEG {eeg_value} -> {command}"
+    )
+
+    return dispatch_command(
+        command,
+        0.95
+    )
+
+
+# =====================================================
+# LOCAL TESTING
 # =====================================================
 
 if __name__ == "__main__":
 
-    test_commands = [
-
-        ("OPEN_NOTEPAD", 0.95),
-        ("OPEN_CALCULATOR", 0.95),
-        ("OPEN_BROWSER", 0.95),
-        ("OPEN_YOUTUBE", 0.95),
-
-        ("VOLUME_UP", 0.95),
-        ("VOLUME_DOWN", 0.95),
-
-        ("PLAY", 0.95),
-        ("PAUSE", 0.95),
-
-        ("SCROLL_DOWN", 0.95),
-        ("SCROLL_UP", 0.95),
-
-        ("MOVE_RIGHT", 0.95),
-        ("MOVE_LEFT", 0.95),
-
-        ("CLICK", 0.95),
-
-        ("CLOSE_NOTEPAD", 0.95),
-        ("CLOSE_CALCULATOR", 0.95),
-        ("CLOSE_BROWSER", 0.95)
+    test_values = [
+        10, 20, 30, 40, 50,
+        60, 70, 80, 90, 100,
+        110, 120,
+        130, 140,
+        150, 160,
+        170, 180,
+        190, 200,
+        210, 220,
+        230, 240, 250
     ]
 
-    for cmd, conf in test_commands:
+    for value in test_values:
 
-        print(f"\nExecuting: {cmd}")
+        print(f"\nTesting EEG Value: {value}")
 
-        result = dispatch_command(cmd, conf)
+        try:
 
-        print(result)
+            result = dispatch_eeg(value)
 
-        time.sleep(10)
+            print(result)
+
+        except Exception as e:
+
+            print(f"ERROR: {e}")
+
+        time.sleep(2)

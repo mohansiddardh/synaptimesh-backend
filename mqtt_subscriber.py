@@ -1,15 +1,38 @@
-from mqtt_client import connect, TOPIC
-from dispatcher import dispatch_command
+import json
+
+from mqtt_client import connect
+from dispatcher import dispatch_eeg
+from logger import logger
+
+TOPIC = "eeg/signals"
 
 client = connect()
 
+
 def on_message(client, userdata, msg):
 
-    command = msg.payload.decode()
+    try:
 
-    result = dispatch_command(command, 0.95)
+        payload = json.loads(
+            msg.payload.decode()
+        )
 
-    print(result)
+        eeg_value = payload["eeg_value"]
+
+        result = dispatch_eeg(
+            eeg_value
+        )
+
+        logger.info(result)
+
+        print(result)
+
+    except Exception as e:
+
+        logger.error(
+            f"MQTT Error: {e}"
+        )
+
 
 client.subscribe(TOPIC)
 

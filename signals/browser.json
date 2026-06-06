@@ -1,0 +1,5 @@
+{
+    "command": "OPEN_BROWSER",
+    "min": 0.95,
+    "max": 1.00
+}

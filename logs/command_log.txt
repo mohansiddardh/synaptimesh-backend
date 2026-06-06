@@ -1,0 +1,538 @@
+2026-06-06 11:57:42 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 11:57:42 | INFO | test_logger | <module> | Logger Test Successful
+2026-06-06 12:03:03 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:03:03 | INFO | test_logger | <module> | Logger Test Successful
+2026-06-06 12:06:29 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:06:29 | INFO | mqtt_client | connect | Connecting to MQTT Broker localhost:1883
+2026-06-06 12:06:29 | INFO | mqtt_client | on_connect | MQTT Connected Successfully
+2026-06-06 12:10:00 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:10:00 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 12:10:00 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 12:10:00 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_NOTEPAD
+2026-06-06 12:10:05 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 12:10:05 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_CALCULATOR
+2026-06-06 12:10:10 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 12:10:10 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 12:10:15 | INFO | dispatcher | dispatch_command | Command Received: OPEN_YOUTUBE | Confidence: 0.95
+2026-06-06 12:23:27 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:23:27 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 12:23:27 | INFO | dispatcher | dispatch_command | Command Received: PLAY | Confidence: 0.65
+2026-06-06 12:23:27 | WARNING | dispatcher | dispatch_command | Low Confidence: 0.65 for PLAY
+2026-06-06 12:23:28 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_UP | Confidence: 0.5
+2026-06-06 12:23:28 | WARNING | dispatcher | dispatch_command | Low Confidence: 0.5 for VOLUME_UP
+2026-06-06 12:23:29 | INFO | dispatcher | dispatch_command | Command Received: WAVE_HAND | Confidence: 0.95
+2026-06-06 12:23:29 | ERROR | dispatcher | dispatch_command | Invalid Command: WAVE_HAND
+2026-06-06 12:23:30 | INFO | dispatcher | dispatch_command | Command Received: PLAY | Confidence: 0.95
+2026-06-06 12:23:30 | INFO | dispatcher | dispatch_command | Command Executed Successfully: PLAY
+2026-06-06 12:23:31 | INFO | dispatcher | dispatch_command | Command Received: PAUSE | Confidence: 0.95
+2026-06-06 12:23:31 | INFO | dispatcher | dispatch_command | Command Executed Successfully: PAUSE
+2026-06-06 12:23:32 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_UP | Confidence: 0.95
+2026-06-06 12:23:33 | INFO | dispatcher | dispatch_command | Command Executed Successfully: VOLUME_UP
+2026-06-06 12:23:34 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_DOWN | Confidence: 0.95
+2026-06-06 12:23:34 | INFO | dispatcher | dispatch_command | Command Executed Successfully: VOLUME_DOWN
+2026-06-06 12:23:35 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 12:23:35 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 12:23:36 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_BROWSER | Confidence: 0.95
+2026-06-06 12:23:36 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLOSE_BROWSER
+2026-06-06 12:23:37 | INFO | dispatcher | dispatch_command | Command Received: OPEN_YOUTUBE | Confidence: 0.95
+2026-06-06 12:23:56 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_YOUTUBE
+2026-06-06 12:23:57 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_YOUTUBE | Confidence: 0.95
+2026-06-06 12:23:57 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLOSE_YOUTUBE
+2026-06-06 12:23:58 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 12:23:58 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_CALCULATOR
+2026-06-06 12:23:59 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_CALCULATOR | Confidence: 0.95
+2026-06-06 12:23:59 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLOSE_CALCULATOR
+2026-06-06 12:24:00 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 12:24:00 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_NOTEPAD
+2026-06-06 12:24:01 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_NOTEPAD | Confidence: 0.95
+2026-06-06 12:24:01 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLOSE_NOTEPAD
+2026-06-06 12:24:02 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_UP | Confidence: 0.95
+2026-06-06 12:24:02 | INFO | dispatcher | dispatch_command | Command Executed Successfully: SCROLL_UP
+2026-06-06 12:24:03 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_DOWN | Confidence: 0.95
+2026-06-06 12:24:03 | INFO | dispatcher | dispatch_command | Command Executed Successfully: SCROLL_DOWN
+2026-06-06 12:24:04 | INFO | dispatcher | dispatch_command | Command Received: MOVE_UP | Confidence: 0.95
+2026-06-06 12:24:05 | INFO | dispatcher | dispatch_command | Command Executed Successfully: MOVE_UP
+2026-06-06 12:24:06 | INFO | dispatcher | dispatch_command | Command Received: MOVE_DOWN | Confidence: 0.95
+2026-06-06 12:24:06 | INFO | dispatcher | dispatch_command | Command Executed Successfully: MOVE_DOWN
+2026-06-06 12:24:07 | INFO | dispatcher | dispatch_command | Command Received: MOVE_LEFT | Confidence: 0.95
+2026-06-06 12:24:07 | INFO | dispatcher | dispatch_command | Command Executed Successfully: MOVE_LEFT
+2026-06-06 12:24:08 | INFO | dispatcher | dispatch_command | Command Received: MOVE_RIGHT | Confidence: 0.95
+2026-06-06 12:24:08 | INFO | dispatcher | dispatch_command | Command Executed Successfully: MOVE_RIGHT
+2026-06-06 12:24:09 | INFO | dispatcher | dispatch_command | Command Received: CLICK | Confidence: 0.95
+2026-06-06 12:24:09 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLICK
+2026-06-06 12:24:10 | INFO | dispatcher | dispatch_command | Command Received: DOUBLE_CLICK | Confidence: 0.95
+2026-06-06 12:24:10 | INFO | dispatcher | dispatch_command | Command Executed Successfully: DOUBLE_CLICK
+2026-06-06 12:24:11 | INFO | dispatcher | dispatch_command | Command Received: RIGHT_CLICK | Confidence: 0.95
+2026-06-06 12:24:11 | INFO | dispatcher | dispatch_command | Command Executed Successfully: RIGHT_CLICK
+2026-06-06 12:24:12 | INFO | dispatcher | dispatch_command | Command Received: PRESS_ENTER | Confidence: 0.95
+2026-06-06 12:24:12 | INFO | dispatcher | dispatch_command | Command Executed Successfully: PRESS_ENTER
+2026-06-06 12:24:13 | INFO | dispatcher | dispatch_command | Command Received: PRESS_ESCAPE | Confidence: 0.95
+2026-06-06 12:24:14 | INFO | dispatcher | dispatch_command | Command Executed Successfully: PRESS_ESCAPE
+2026-06-06 12:27:28 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:27:28 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 12:27:28 | INFO | main | <module> | Server Starting
+2026-06-06 12:27:29 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:27:29 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 12:27:29 | INFO | main | <module> | Server Starting
+2026-06-06 12:28:06 | INFO | main | health | Health endpoint accessed
+2026-06-06 12:28:07 | INFO | main | root | Root endpoint accessed
+2026-06-06 12:28:08 | INFO | main | eeg_status | EEG status checked
+2026-06-06 12:28:09 | INFO | main | dispatch | Command Received: PLAY, Confidence: 0.95
+2026-06-06 12:28:09 | INFO | dispatcher | dispatch_command | Command Received: PLAY | Confidence: 0.95
+2026-06-06 12:28:09 | INFO | dispatcher | dispatch_command | Command Executed Successfully: PLAY
+2026-06-06 12:28:09 | INFO | main | dispatch | Command Executed Successfully: PLAY
+2026-06-06 12:28:10 | INFO | main | dispatch | Command Received: VOLUME_UP, Confidence: 0.4
+2026-06-06 12:28:10 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_UP | Confidence: 0.4
+2026-06-06 12:28:10 | WARNING | dispatcher | dispatch_command | Low Confidence: 0.4 for VOLUME_UP
+2026-06-06 12:28:10 | INFO | main | dispatch | Command Executed Successfully: VOLUME_UP
+2026-06-06 12:28:11 | INFO | main | dispatch | Command Received: WAVE_HAND, Confidence: 0.95
+2026-06-06 12:28:11 | INFO | dispatcher | dispatch_command | Command Received: WAVE_HAND | Confidence: 0.95
+2026-06-06 12:28:11 | ERROR | dispatcher | dispatch_command | Invalid Command: WAVE_HAND
+2026-06-06 12:28:11 | ERROR | main | invalid_command_handler | Invalid Command Error: WAVE_HAND is not a valid command
+2026-06-06 12:28:12 | INFO | main | eeg_command | EEG Value Received: 0.95
+2026-06-06 12:28:12 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 0.95
+2026-06-06 12:28:12 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 12:28:12 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 12:28:12 | INFO | main | eeg_command | EEG Processing Result: {'status': 'executed', 'command': 'OPEN_BROWSER', 'confidence': 0.95, 'message': 'Browser Opened'}
+2026-06-06 12:30:40 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:30:40 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 12:30:40 | INFO | main | <module> | Server Starting
+2026-06-06 12:31:06 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:31:06 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 12:31:06 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 12:31:06 | INFO | mqtt_subscriber | <module> | Subscribed to Topic: eeg/commands
+2026-06-06 12:31:06 | INFO | mqtt_subscriber | <module> | MQTT Subscriber Started
+2026-06-06 12:35:47 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 12:35:47 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 12:35:47 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 12:35:47 | INFO | mqtt_subscriber | <module> | Subscribed to Topic: eeg/commands
+2026-06-06 12:35:47 | INFO | mqtt_subscriber | <module> | MQTT Subscriber Started
+2026-06-06 13:23:46 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 13:23:47 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 13:23:47 | INFO | main | <module> | Server Starting
+2026-06-06 13:24:47 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 13:24:47 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 13:24:47 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 13:24:47 | INFO | mqtt_subscriber | <module> | Subscribed to Topic: eeg/commands
+2026-06-06 13:24:47 | INFO | mqtt_subscriber | <module> | MQTT Subscriber Started
+2026-06-06 13:24:58 | INFO | mqtt_subscriber | on_message | MQTT Message Received: OPEN_NOTEPAD
+2026-06-06 13:24:58 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 13:24:58 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_NOTEPAD
+2026-06-06 13:24:58 | INFO | mqtt_subscriber | on_message | Dispatch Result: {'status': 'executed', 'command': 'OPEN_NOTEPAD', 'confidence': 0.95, 'message': 'Notepad Opened'}
+2026-06-06 13:38:52 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 13:38:52 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 13:38:52 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 13:39:43 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 13:39:43 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:39:43 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:39:43 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:40:28 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 13:40:28 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:40:28 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:40:28 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:42:31 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 13:42:31 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 13:42:31 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 13:42:31 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_NOTEPAD
+2026-06-06 13:42:31 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 13:42:31 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_CALCULATOR
+2026-06-06 13:46:27 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 13:46:27 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 13:46:27 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 13:46:34 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 13:46:34 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 13:46:34 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:46:34 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:46:34 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:46:34 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:46:34 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:46:34 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:50:42 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 13:50:42 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 13:50:42 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:50:50 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:52:13 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 13:55:19 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 13:55:19 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 13:56:14 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 13:56:14 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_NOTEPAD
+2026-06-06 13:57:51 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 13:57:51 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_CALCULATOR
+2026-06-06 13:58:16 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 13:58:16 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 14:00:04 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 14:00:04 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 14:00:04 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:00:04 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_NOTEPAD
+2026-06-06 14:00:04 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:00:04 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_CALCULATOR
+2026-06-06 14:00:04 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 14:00:04 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 14:01:41 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 14:01:41 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 14:01:41 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 10
+2026-06-06 14:01:41 | INFO | dispatcher | dispatch_eeg | EEG 10 mapped to OPEN_NOTEPAD
+2026-06-06 14:01:41 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:01:41 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_NOTEPAD
+2026-06-06 14:01:43 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 20
+2026-06-06 14:01:43 | INFO | dispatcher | dispatch_eeg | EEG 20 mapped to OPEN_CALCULATOR
+2026-06-06 14:01:43 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:01:43 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_CALCULATOR
+2026-06-06 14:01:45 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 14:01:45 | INFO | dispatcher | dispatch_eeg | EEG 30 mapped to OPEN_BROWSER
+2026-06-06 14:01:45 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 14:01:45 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_BROWSER
+2026-06-06 14:01:47 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 40
+2026-06-06 14:01:47 | INFO | dispatcher | dispatch_eeg | EEG 40 mapped to OPEN_YOUTUBE
+2026-06-06 14:01:47 | INFO | dispatcher | dispatch_command | Command Received: OPEN_YOUTUBE | Confidence: 0.95
+2026-06-06 14:02:06 | INFO | dispatcher | dispatch_command | Command Executed Successfully: OPEN_YOUTUBE
+2026-06-06 14:02:08 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 50
+2026-06-06 14:02:08 | INFO | dispatcher | dispatch_eeg | EEG 50 mapped to VOLUME_UP
+2026-06-06 14:02:08 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_UP | Confidence: 0.95
+2026-06-06 14:02:08 | INFO | dispatcher | dispatch_command | Command Executed Successfully: VOLUME_UP
+2026-06-06 14:02:10 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 60
+2026-06-06 14:02:10 | INFO | dispatcher | dispatch_eeg | EEG 60 mapped to VOLUME_DOWN
+2026-06-06 14:02:10 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_DOWN | Confidence: 0.95
+2026-06-06 14:02:10 | INFO | dispatcher | dispatch_command | Command Executed Successfully: VOLUME_DOWN
+2026-06-06 14:02:12 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 70
+2026-06-06 14:02:12 | INFO | dispatcher | dispatch_eeg | EEG 70 mapped to PLAY
+2026-06-06 14:02:12 | INFO | dispatcher | dispatch_command | Command Received: PLAY | Confidence: 0.95
+2026-06-06 14:02:12 | INFO | dispatcher | dispatch_command | Command Executed Successfully: PLAY
+2026-06-06 14:02:14 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 80
+2026-06-06 14:02:14 | INFO | dispatcher | dispatch_eeg | EEG 80 mapped to PAUSE
+2026-06-06 14:02:14 | INFO | dispatcher | dispatch_command | Command Received: PAUSE | Confidence: 0.95
+2026-06-06 14:02:14 | INFO | dispatcher | dispatch_command | Command Executed Successfully: PAUSE
+2026-06-06 14:02:16 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 90
+2026-06-06 14:02:16 | INFO | dispatcher | dispatch_eeg | EEG 90 mapped to SCROLL_UP
+2026-06-06 14:02:16 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_UP | Confidence: 0.95
+2026-06-06 14:02:16 | INFO | dispatcher | dispatch_command | Command Executed Successfully: SCROLL_UP
+2026-06-06 14:02:18 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 100
+2026-06-06 14:02:18 | INFO | dispatcher | dispatch_eeg | EEG 100 mapped to SCROLL_DOWN
+2026-06-06 14:02:18 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_DOWN | Confidence: 0.95
+2026-06-06 14:02:18 | INFO | dispatcher | dispatch_command | Command Executed Successfully: SCROLL_DOWN
+2026-06-06 14:02:20 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 110
+2026-06-06 14:02:20 | INFO | dispatcher | dispatch_eeg | EEG 110 mapped to MOVE_LEFT
+2026-06-06 14:02:20 | INFO | dispatcher | dispatch_command | Command Received: MOVE_LEFT | Confidence: 0.95
+2026-06-06 14:02:20 | INFO | dispatcher | dispatch_command | Command Executed Successfully: MOVE_LEFT
+2026-06-06 14:02:22 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 120
+2026-06-06 14:02:22 | INFO | dispatcher | dispatch_eeg | EEG 120 mapped to MOVE_RIGHT
+2026-06-06 14:02:22 | INFO | dispatcher | dispatch_command | Command Received: MOVE_RIGHT | Confidence: 0.95
+2026-06-06 14:02:22 | INFO | dispatcher | dispatch_command | Command Executed Successfully: MOVE_RIGHT
+2026-06-06 14:02:25 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 130
+2026-06-06 14:02:25 | INFO | dispatcher | dispatch_eeg | EEG 130 mapped to MOVE_UP
+2026-06-06 14:02:25 | INFO | dispatcher | dispatch_command | Command Received: MOVE_UP | Confidence: 0.95
+2026-06-06 14:02:25 | INFO | dispatcher | dispatch_command | Command Executed Successfully: MOVE_UP
+2026-06-06 14:02:27 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 140
+2026-06-06 14:02:27 | INFO | dispatcher | dispatch_eeg | EEG 140 mapped to MOVE_DOWN
+2026-06-06 14:02:27 | INFO | dispatcher | dispatch_command | Command Received: MOVE_DOWN | Confidence: 0.95
+2026-06-06 14:02:27 | INFO | dispatcher | dispatch_command | Command Executed Successfully: MOVE_DOWN
+2026-06-06 14:02:29 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 150
+2026-06-06 14:02:29 | INFO | dispatcher | dispatch_eeg | EEG 150 mapped to CLICK
+2026-06-06 14:02:29 | INFO | dispatcher | dispatch_command | Command Received: CLICK | Confidence: 0.95
+2026-06-06 14:02:29 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLICK
+2026-06-06 14:02:31 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 160
+2026-06-06 14:02:31 | INFO | dispatcher | dispatch_eeg | EEG 160 mapped to DOUBLE_CLICK
+2026-06-06 14:02:31 | INFO | dispatcher | dispatch_command | Command Received: DOUBLE_CLICK | Confidence: 0.95
+2026-06-06 14:02:31 | INFO | dispatcher | dispatch_command | Command Executed Successfully: DOUBLE_CLICK
+2026-06-06 14:02:33 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 170
+2026-06-06 14:02:33 | INFO | dispatcher | dispatch_eeg | EEG 170 mapped to CLOSE_NOTEPAD
+2026-06-06 14:02:33 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_NOTEPAD | Confidence: 0.95
+2026-06-06 14:02:33 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLOSE_NOTEPAD
+2026-06-06 14:02:35 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 180
+2026-06-06 14:02:35 | INFO | dispatcher | dispatch_eeg | EEG 180 mapped to CLOSE_CALCULATOR
+2026-06-06 14:02:35 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_CALCULATOR | Confidence: 0.95
+2026-06-06 14:02:35 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLOSE_CALCULATOR
+2026-06-06 14:02:37 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 190
+2026-06-06 14:02:37 | INFO | dispatcher | dispatch_eeg | EEG 190 mapped to CLOSE_BROWSER
+2026-06-06 14:02:37 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_BROWSER | Confidence: 0.95
+2026-06-06 14:02:38 | INFO | dispatcher | dispatch_command | Command Executed Successfully: CLOSE_BROWSER
+2026-06-06 14:08:06 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 14:08:06 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 14:08:06 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 14:08:27 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 0.95
+2026-06-06 14:08:27 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 0.95
+2026-06-06 14:08:27 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 0.95
+2026-06-06 14:08:27 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:27 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:27 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:37 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 0.75
+2026-06-06 14:08:37 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:37 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:37 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:37 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:41 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 0.9
+2026-06-06 14:08:41 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 0.9
+2026-06-06 14:08:41 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:41 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:08:41 | WARNING | dispatcher | dispatch_eeg | No command mapped for EEG value 0
+2026-06-06 14:30:03 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 14:30:03 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 14:30:03 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 14:30:24 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 10
+2026-06-06 14:30:24 | INFO | dispatcher | dispatch_eeg | EEG 10 -> OPEN_NOTEPAD
+2026-06-06 14:30:24 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:30:24 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:30:24 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_NOTEPAD', 'confidence': 0.95, 'message': 'Notepad Opened'}
+2026-06-06 14:30:32 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 20
+2026-06-06 14:30:32 | INFO | dispatcher | dispatch_eeg | EEG 20 -> OPEN_CALCULATOR
+2026-06-06 14:30:32 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:30:32 | INFO | dispatcher | dispatch_command | Executed: OPEN_CALCULATOR
+2026-06-06 14:30:32 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_CALCULATOR', 'confidence': 0.95, 'message': 'Calculator Opened'}
+2026-06-06 14:30:40 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 14:30:40 | INFO | dispatcher | dispatch_eeg | EEG 30 -> OPEN_BROWSER
+2026-06-06 14:30:40 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 14:30:40 | INFO | dispatcher | dispatch_command | Executed: OPEN_BROWSER
+2026-06-06 14:30:40 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_BROWSER', 'confidence': 0.95, 'message': 'Browser Opened'}
+2026-06-06 14:30:44 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 40
+2026-06-06 14:30:44 | INFO | dispatcher | dispatch_eeg | EEG 40 -> OPEN_YOUTUBE
+2026-06-06 14:30:44 | INFO | dispatcher | dispatch_command | Command Received: OPEN_YOUTUBE | Confidence: 0.95
+2026-06-06 14:30:44 | INFO | dispatcher | dispatch_command | Executed: OPEN_YOUTUBE
+2026-06-06 14:30:44 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_YOUTUBE', 'confidence': 0.95, 'message': 'YouTube Opened'}
+2026-06-06 14:30:50 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 50
+2026-06-06 14:30:50 | INFO | dispatcher | dispatch_eeg | EEG 50 -> OPEN_CHATGPT
+2026-06-06 14:30:50 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CHATGPT | Confidence: 0.95
+2026-06-06 14:30:50 | INFO | dispatcher | dispatch_command | Executed: OPEN_CHATGPT
+2026-06-06 14:30:50 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_CHATGPT', 'confidence': 0.95, 'message': 'ChatGPT Opened'}
+2026-06-06 14:31:01 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 60
+2026-06-06 14:31:01 | INFO | dispatcher | dispatch_eeg | EEG 60 -> CLOSE_NOTEPAD
+2026-06-06 14:31:01 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_NOTEPAD | Confidence: 0.95
+2026-06-06 14:31:01 | INFO | dispatcher | dispatch_command | Executed: CLOSE_NOTEPAD
+2026-06-06 14:31:01 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_NOTEPAD', 'confidence': 0.95, 'message': 'Notepad Closed'}
+2026-06-06 14:31:06 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 60
+2026-06-06 14:31:06 | INFO | dispatcher | dispatch_eeg | EEG 60 -> CLOSE_NOTEPAD
+2026-06-06 14:31:06 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_NOTEPAD | Confidence: 0.95
+2026-06-06 14:31:06 | INFO | dispatcher | dispatch_command | Executed: CLOSE_NOTEPAD
+2026-06-06 14:31:06 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_NOTEPAD', 'confidence': 0.95, 'message': 'Notepad Closed'}
+2026-06-06 14:31:10 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 70
+2026-06-06 14:31:10 | INFO | dispatcher | dispatch_eeg | EEG 70 -> CLOSE_CALCULATOR
+2026-06-06 14:31:10 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_CALCULATOR | Confidence: 0.95
+2026-06-06 14:31:10 | INFO | dispatcher | dispatch_command | Executed: CLOSE_CALCULATOR
+2026-06-06 14:31:10 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_CALCULATOR', 'confidence': 0.95, 'message': 'Calculator Closed'}
+2026-06-06 14:31:42 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 80
+2026-06-06 14:31:42 | INFO | dispatcher | dispatch_eeg | EEG 80 -> CLOSE_BROWSER
+2026-06-06 14:31:42 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_BROWSER | Confidence: 0.95
+2026-06-06 14:31:42 | INFO | dispatcher | dispatch_command | Executed: CLOSE_BROWSER
+2026-06-06 14:31:42 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_BROWSER', 'confidence': 0.95, 'message': 'Browser Closed'}
+2026-06-06 14:31:48 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 100
+2026-06-06 14:31:48 | INFO | dispatcher | dispatch_eeg | EEG 100 -> CLOSE_CHATGPT
+2026-06-06 14:31:48 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_CHATGPT | Confidence: 0.95
+2026-06-06 14:31:49 | INFO | dispatcher | dispatch_command | Executed: CLOSE_CHATGPT
+2026-06-06 14:31:49 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_CHATGPT', 'confidence': 0.95, 'message': 'ChatGPT Closed'}
+2026-06-06 14:32:02 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 100
+2026-06-06 14:32:02 | INFO | dispatcher | dispatch_eeg | EEG 100 -> CLOSE_CHATGPT
+2026-06-06 14:32:02 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_CHATGPT | Confidence: 0.95
+2026-06-06 14:32:02 | INFO | dispatcher | dispatch_command | Executed: CLOSE_CHATGPT
+2026-06-06 14:32:02 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_CHATGPT', 'confidence': 0.95, 'message': 'ChatGPT Closed'}
+2026-06-06 14:35:08 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 14:35:08 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 14:35:08 | INFO | mqtt_client | connect | MQTT Connected Successfully
+2026-06-06 14:35:16 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 10
+2026-06-06 14:35:16 | INFO | dispatcher | dispatch_eeg | EEG 10 -> OPEN_NOTEPAD
+2026-06-06 14:35:16 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:35:16 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:35:16 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_NOTEPAD', 'confidence': 0.95, 'message': 'Notepad Opened'}
+2026-06-06 14:35:23 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 20
+2026-06-06 14:35:23 | INFO | dispatcher | dispatch_eeg | EEG 20 -> OPEN_CALCULATOR
+2026-06-06 14:35:23 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:35:23 | INFO | dispatcher | dispatch_command | Executed: OPEN_CALCULATOR
+2026-06-06 14:35:23 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_CALCULATOR', 'confidence': 0.95, 'message': 'Calculator Opened'}
+2026-06-06 14:35:30 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 30
+2026-06-06 14:35:30 | INFO | dispatcher | dispatch_eeg | EEG 30 -> OPEN_BROWSER
+2026-06-06 14:35:30 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 14:35:30 | INFO | dispatcher | dispatch_command | Executed: OPEN_BROWSER
+2026-06-06 14:35:30 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_BROWSER', 'confidence': 0.95, 'message': 'Browser Opened'}
+2026-06-06 14:35:37 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 40
+2026-06-06 14:35:37 | INFO | dispatcher | dispatch_eeg | EEG 40 -> OPEN_YOUTUBE
+2026-06-06 14:35:37 | INFO | dispatcher | dispatch_command | Command Received: OPEN_YOUTUBE | Confidence: 0.95
+2026-06-06 14:35:37 | INFO | dispatcher | dispatch_command | Executed: OPEN_YOUTUBE
+2026-06-06 14:35:37 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_YOUTUBE', 'confidence': 0.95, 'message': 'YouTube Opened'}
+2026-06-06 14:35:44 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 50
+2026-06-06 14:35:44 | INFO | dispatcher | dispatch_eeg | EEG 50 -> OPEN_CHATGPT
+2026-06-06 14:35:44 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CHATGPT | Confidence: 0.95
+2026-06-06 14:35:44 | INFO | dispatcher | dispatch_command | Executed: OPEN_CHATGPT
+2026-06-06 14:35:44 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_CHATGPT', 'confidence': 0.95, 'message': 'ChatGPT Opened'}
+2026-06-06 14:35:51 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 100
+2026-06-06 14:35:51 | INFO | dispatcher | dispatch_eeg | EEG 100 -> CLOSE_CHATGPT
+2026-06-06 14:35:51 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_CHATGPT | Confidence: 0.95
+2026-06-06 14:35:51 | INFO | dispatcher | dispatch_command | Executed: CLOSE_CHATGPT
+2026-06-06 14:35:51 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_CHATGPT', 'confidence': 0.95, 'message': 'ChatGPT Closed'}
+2026-06-06 14:35:58 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 110
+2026-06-06 14:35:58 | INFO | dispatcher | dispatch_eeg | EEG 110 -> VOLUME_UP
+2026-06-06 14:35:58 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_UP | Confidence: 0.95
+2026-06-06 14:35:58 | INFO | dispatcher | dispatch_command | Executed: VOLUME_UP
+2026-06-06 14:35:58 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'VOLUME_UP', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:36:05 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 140
+2026-06-06 14:36:05 | INFO | dispatcher | dispatch_eeg | EEG 140 -> PAUSE
+2026-06-06 14:36:05 | INFO | dispatcher | dispatch_command | Command Received: PAUSE | Confidence: 0.95
+2026-06-06 14:36:05 | INFO | dispatcher | dispatch_command | Executed: PAUSE
+2026-06-06 14:36:05 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'PAUSE', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:36:12 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 150
+2026-06-06 14:36:12 | INFO | dispatcher | dispatch_eeg | EEG 150 -> NEXT_TRACK
+2026-06-06 14:36:12 | INFO | dispatcher | dispatch_command | Command Received: NEXT_TRACK | Confidence: 0.95
+2026-06-06 14:36:12 | INFO | dispatcher | dispatch_command | Executed: NEXT_TRACK
+2026-06-06 14:36:12 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'NEXT_TRACK', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:36:19 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 160
+2026-06-06 14:36:19 | INFO | dispatcher | dispatch_eeg | EEG 160 -> PREV_TRACK
+2026-06-06 14:36:19 | INFO | dispatcher | dispatch_command | Command Received: PREV_TRACK | Confidence: 0.95
+2026-06-06 14:36:19 | INFO | dispatcher | dispatch_command | Executed: PREV_TRACK
+2026-06-06 14:36:19 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'PREV_TRACK', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:36:26 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 170
+2026-06-06 14:36:26 | INFO | dispatcher | dispatch_eeg | EEG 170 -> SCROLL_UP
+2026-06-06 14:36:26 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_UP | Confidence: 0.95
+2026-06-06 14:36:26 | INFO | dispatcher | dispatch_command | Executed: SCROLL_UP
+2026-06-06 14:36:26 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'SCROLL_UP', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:36:33 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 180
+2026-06-06 14:36:33 | INFO | dispatcher | dispatch_eeg | EEG 180 -> SCROLL_DOWN
+2026-06-06 14:36:33 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_DOWN | Confidence: 0.95
+2026-06-06 14:36:33 | INFO | dispatcher | dispatch_command | Executed: SCROLL_DOWN
+2026-06-06 14:36:33 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'SCROLL_DOWN', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:36:40 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 190
+2026-06-06 14:36:40 | INFO | dispatcher | dispatch_eeg | EEG 190 -> MOVE_LEFT
+2026-06-06 14:36:40 | INFO | dispatcher | dispatch_command | Command Received: MOVE_LEFT | Confidence: 0.95
+2026-06-06 14:36:40 | INFO | dispatcher | dispatch_command | Executed: MOVE_LEFT
+2026-06-06 14:36:40 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'MOVE_LEFT', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:36:47 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 200
+2026-06-06 14:36:47 | INFO | dispatcher | dispatch_eeg | EEG 200 -> MOVE_RIGHT
+2026-06-06 14:36:47 | INFO | dispatcher | dispatch_command | Command Received: MOVE_RIGHT | Confidence: 0.95
+2026-06-06 14:36:47 | INFO | dispatcher | dispatch_command | Executed: MOVE_RIGHT
+2026-06-06 14:36:47 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'MOVE_RIGHT', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:36:54 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 210
+2026-06-06 14:36:54 | INFO | dispatcher | dispatch_eeg | EEG 210 -> MOVE_UP
+2026-06-06 14:36:54 | INFO | dispatcher | dispatch_command | Command Received: MOVE_UP | Confidence: 0.95
+2026-06-06 14:36:54 | INFO | dispatcher | dispatch_command | Executed: MOVE_UP
+2026-06-06 14:36:54 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'MOVE_UP', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:37:01 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 220
+2026-06-06 14:37:01 | INFO | dispatcher | dispatch_eeg | EEG 220 -> MOVE_DOWN
+2026-06-06 14:37:01 | INFO | dispatcher | dispatch_command | Command Received: MOVE_DOWN | Confidence: 0.95
+2026-06-06 14:37:01 | INFO | dispatcher | dispatch_command | Executed: MOVE_DOWN
+2026-06-06 14:37:01 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'MOVE_DOWN', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:37:08 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 230
+2026-06-06 14:37:08 | INFO | dispatcher | dispatch_eeg | EEG 230 -> CLICK
+2026-06-06 14:37:08 | INFO | dispatcher | dispatch_command | Command Received: CLICK | Confidence: 0.95
+2026-06-06 14:37:08 | INFO | dispatcher | dispatch_command | Executed: CLICK
+2026-06-06 14:37:08 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLICK', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:37:15 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 240
+2026-06-06 14:37:15 | INFO | dispatcher | dispatch_eeg | EEG 240 -> DOUBLE_CLICK
+2026-06-06 14:37:15 | INFO | dispatcher | dispatch_command | Command Received: DOUBLE_CLICK | Confidence: 0.95
+2026-06-06 14:37:15 | INFO | dispatcher | dispatch_command | Executed: DOUBLE_CLICK
+2026-06-06 14:37:15 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'DOUBLE_CLICK', 'confidence': 0.95, 'message': 'None'}
+2026-06-06 14:37:22 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 60
+2026-06-06 14:37:22 | INFO | dispatcher | dispatch_eeg | EEG 60 -> CLOSE_NOTEPAD
+2026-06-06 14:37:22 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_NOTEPAD | Confidence: 0.95
+2026-06-06 14:37:22 | INFO | dispatcher | dispatch_command | Executed: CLOSE_NOTEPAD
+2026-06-06 14:37:22 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_NOTEPAD', 'confidence': 0.95, 'message': 'Notepad Closed'}
+2026-06-06 14:37:29 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 70
+2026-06-06 14:37:29 | INFO | dispatcher | dispatch_eeg | EEG 70 -> CLOSE_CALCULATOR
+2026-06-06 14:37:29 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_CALCULATOR | Confidence: 0.95
+2026-06-06 14:37:29 | INFO | dispatcher | dispatch_command | Executed: CLOSE_CALCULATOR
+2026-06-06 14:37:29 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_CALCULATOR', 'confidence': 0.95, 'message': 'Calculator Closed'}
+2026-06-06 14:37:36 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 80
+2026-06-06 14:37:36 | INFO | dispatcher | dispatch_eeg | EEG 80 -> CLOSE_BROWSER
+2026-06-06 14:37:36 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_BROWSER | Confidence: 0.95
+2026-06-06 14:37:36 | INFO | dispatcher | dispatch_command | Executed: CLOSE_BROWSER
+2026-06-06 14:37:36 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_BROWSER', 'confidence': 0.95, 'message': 'Browser Closed'}
+2026-06-06 14:37:43 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 90
+2026-06-06 14:37:43 | INFO | dispatcher | dispatch_eeg | EEG 90 -> CLOSE_YOUTUBE
+2026-06-06 14:37:43 | INFO | dispatcher | dispatch_command | Command Received: CLOSE_YOUTUBE | Confidence: 0.95
+2026-06-06 14:37:43 | INFO | dispatcher | dispatch_command | Executed: CLOSE_YOUTUBE
+2026-06-06 14:37:43 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'CLOSE_YOUTUBE', 'confidence': 0.95, 'message': 'YouTube Closed'}
+2026-06-06 14:37:50 | INFO | dispatcher | dispatch_eeg | EEG Value Received: 10
+2026-06-06 14:37:50 | INFO | dispatcher | dispatch_eeg | EEG 10 -> OPEN_NOTEPAD
+2026-06-06 14:37:50 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:37:50 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:37:50 | INFO | mqtt_subscriber | on_message | {'status': 'executed', 'command': 'OPEN_NOTEPAD', 'confidence': 0.95, 'message': 'Notepad Opened'}
+2026-06-06 14:50:39 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 14:50:39 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 14:50:39 | INFO | mqtt_client | connect | MQTT Connected
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Executed: OPEN_CALCULATOR
+2026-06-06 14:50:39 | INFO | test_logger | <module> | Logger Test Successful
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Executed: OPEN_CALCULATOR
+2026-06-06 14:50:39 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 14:50:40 | INFO | dispatcher | dispatch_command | Executed: OPEN_BROWSER
+2026-06-06 14:53:42 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 14:53:42 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Executed: OPEN_CALCULATOR
+2026-06-06 14:53:42 | INFO | test_logger | <module> | Logger Test Successful
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Executed: OPEN_CALCULATOR
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Executed: OPEN_BROWSER
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: PLAY | Confidence: 0.95
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Executed: PLAY
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: PAUSE | Confidence: 0.95
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Executed: PAUSE
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_UP | Confidence: 0.95
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Executed: VOLUME_UP
+2026-06-06 14:53:42 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_DOWN | Confidence: 0.95
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Executed: VOLUME_DOWN
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_UP | Confidence: 0.95
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Executed: SCROLL_UP
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_DOWN | Confidence: 0.95
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Executed: SCROLL_DOWN
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Command Received: MOVE_LEFT | Confidence: 0.95
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Executed: MOVE_LEFT
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Command Received: MOVE_RIGHT | Confidence: 0.95
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Executed: MOVE_RIGHT
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Command Received: CLICK | Confidence: 0.95
+2026-06-06 14:53:43 | INFO | dispatcher | dispatch_command | Executed: CLICK
+2026-06-06 14:57:53 | INFO | logger | <module> | EEG Desktop Automation Logging Initialized
+2026-06-06 14:57:53 | INFO | dispatcher | <module> | Dispatcher Module Loaded
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Executed: OPEN_CALCULATOR
+2026-06-06 14:57:53 | INFO | test_logger | <module> | Logger Test Successful
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Command Received: OPEN_NOTEPAD | Confidence: 0.95
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Executed: OPEN_NOTEPAD
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Command Received: OPEN_CALCULATOR | Confidence: 0.95
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Executed: OPEN_CALCULATOR
+2026-06-06 14:57:53 | INFO | dispatcher | dispatch_command | Command Received: OPEN_BROWSER | Confidence: 0.95
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Executed: OPEN_BROWSER
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Command Received: PLAY | Confidence: 0.95
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Executed: PLAY
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Command Received: PAUSE | Confidence: 0.95
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Executed: PAUSE
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_UP | Confidence: 0.95
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Executed: VOLUME_UP
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Command Received: VOLUME_DOWN | Confidence: 0.95
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Executed: VOLUME_DOWN
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_UP | Confidence: 0.95
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Executed: SCROLL_UP
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Command Received: SCROLL_DOWN | Confidence: 0.95
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Executed: SCROLL_DOWN
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Command Received: MOVE_LEFT | Confidence: 0.95
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Executed: MOVE_LEFT
+2026-06-06 14:57:54 | INFO | dispatcher | dispatch_command | Command Received: MOVE_RIGHT | Confidence: 0.95
+2026-06-06 14:57:55 | INFO | dispatcher | dispatch_command | Executed: MOVE_RIGHT
+2026-06-06 14:57:55 | INFO | dispatcher | dispatch_command | Command Received: CLICK | Confidence: 0.95
+2026-06-06 14:57:55 | INFO | dispatcher | dispatch_command | Executed: CLICK

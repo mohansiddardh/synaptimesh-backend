@@ -1,0 +1,5 @@
+{
+    "command": "VOLUME_UP",
+    "min": 0.80,
+    "max": 0.84
+}
